@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Procesos</title>
+  <!---- 
+   <link rel="stylesheet" href="mapa_procesos.css"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="p-5 mb-4 mt-4 bg-secondary-subtle text-secondary-emphasis text-center">
+      <h1> MAPA DE PROCESOS DEL SISTEMA DE GESTION DE LA CALIDAD</h1>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="contextoModal" tabindex="-1" aria-labelledby="contextoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background: rgb(62, 157, 246);">
+            <h1 class="modal-title fs-5" id="contextoModalLabel">Identificacion del Contexto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>La Universidad ha determinado la Metodología DOFA para definir el contexto interno y externo
+              de la organización en el alcance del Sistema de Gestión de la Calidad y los procesos de la Universidad,
+              mediante la cual se analizan factores internos (debilidades y fortalezas) y factores externos (amenazas y
+              oportunidades),
+              con el fin de analizar su situación actual, alineación a los objetivos y dar una valoración, los cuales
+              identifican las
+              posibles acciones de riesgo, oportunidad o mejoramiento.</p>
+
+            <p>
+              En un ejercicio de planeación estratégica y participativa,
+              mediante la herramienta denominada análisis FODA, se identificaron las principales Fortalezas,
+              Oportunidades, Debilidades y
+              Amenazas de la Institución. Los resultados de éste ejercicio se muestran a continuación:
+            </p>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item" style="background-color: rgb(241, 243, 245);">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fortalezas"
+                    aria-expanded="true" aria-controls="fortalezas" style="background-color: #f8fafb;">
+                    FORTALEZAS
+                  </button>
+                </h2>
+                <div id="fortalezas" class="accordion-collapse collapse" data-bs-parent="#fortalezas">
+                  <div class="accordion-body">
+                    <strong>
+                      <p>Nivel Alto:</p>
+                    </strong>
+                    <li>100% de los estudiantes de nuevo ingreso participan en el programa de inducción;</li>
+
+                    <li>En la matrícula escolar se tiene una participación significativa del sexo femenino;</li>
+
+                    <li>Índice de retención escolar superior a la media nacional del Subsistema de Universidades
+                      Tecnológicas;
+                    </li>
+
+                    <li>Tasa de egreso por cohorte generacional de TSU y Licenciatura superior a la media nacional del
+                      Subsistema
+                      de Universidades Tecnológicas;</li>
+
+                    <li>El 100% de los alumnos cuentan con seguridad social para el cuidado y prevención de la salud;
+                    </li>
+
+                    <li>Cuatro Cuerpos Académicos en Formación;</li>
+
+                    <li>Profesores de Tiempo Completo con posgrado afín al Programa Educativo de adscripción;</li>
+
+                    <li>El 100% de profesores que imparten una lengua extranjera están certificados;</li>
+
+                    <li>Utilización del 100% de la infraestructura instalada en el turno matutino y el 71% en el
+                      vespertino;
+                    </li>
+
+                    <li>Alto índice de colocación de los egresados en su área de competencia;</li>
+
+                    <li>UTS reconocida por NC Tech, como Centro Certificador Internacional Educativo CSWA;</li>
+
+                    <li>Centro de exámenes del British Council México para ofrecer las certificaciones de Cambridge
+                      English
+                      Language Assessment, IELTS y Aptis;</li>
+
+                    <li>UTS avalada por el CONOCER, como Entidad Certificadora y Evaluadora (ECE);</li>
+
+                    <li>Consejo de Vinculación y Pertinencia de la UTS instalado; </li>
+
+                    <li>Líneas de investigación implementadas;</li>
+
+                    <li>Amplia Oferta de Programas Educativos pertinentes a las necesidades del sector productivo,
+                      avalados
+                      por
+                      los AST;</li>
+
+                    <li>Programa de lenguas extranjeras impartidas en la institución;</li>
+
+                    <li>Servicio de atención psicopedagógica;</li>
+
+                    <li>Certificación del Sistema de Gestión de la Calidad en la norma ISO 9001-2015 en los
+                      Macroprocesos:
+                      Estratégico: Planeación y Calidad; De Soporte: Gestión Administrativa, Vinculación y Extensión
+                      Universitaria; y Clave: Educativo.</li>
+
+                    <li>Certificación en la Norma Mexicana NMX-R-025-SCFI-2015, de Igualdad Laboral y No Discriminación;
+                    </li>
+
+                    <li>Tramite de titulación de forma digital; </li>
+
+                    <li>Cobertura de la red inalámbrica y conexión a internet para los estudiantes; </li>
+
+                    <li>Eficiente aplicación de los Recursos Financieros; </li>
+
+                    <li>Personal docente y administrativo habilitado y capacitado;</li>
+
+                    <li>Programa de capacitación permanente y enfocado a resultados;</li>
+
+                    <li>Equipo de trabajo comprometidos con la mejora continua;</li>
+
+                    <li>Firma de convenios de colaboración con empresas e instituciones, para participar como centros de
+                      evaluación de competencias y para desarrollo del modelo dual.</li>
+
+                    <strong>
+                      <p>Nivel Medio: </p>
+                    </strong>
+
+                    <li>El 100% de los estudiantes reciben tutorías;</li>
+
+                    <li>Estudios de trayectorias y egresados realizados;</li>
+
+                    <li>Participación en el Encuentro Nacional Deportivo y Cultural de Universidades Tecnológicas, así
+                      como en
+                      torneos externos e internos; </li>
+
+                    <li>Acreditación del 57% de los Programas Educativos de TSU evaluables por parte de los Comités
+                      Interinstitucionales para la Evaluación de la Educación Superior, A. C. (CIEES); </li>
+
+                    <li>Alto porcentaje de alumnos beneficiados con algún tipo de beca. </li>
+
+                    <strong>
+                      <p> Nivel Bajo: </p>
+                    </strong>
+
+                    <li>100% de los Profesores de Tiempo Completo imparten Tutorías;</li>
+
+                    <li>La matrícula de estudiantes de TSU y Licenciatura se ha mantenido;</li>
+
+                    <li>Infraestructura (edificio de laboratorios y talleres) para la correcta aplicación del 70% de
+                      práctica
+                      y
+                      30% de teoría, del modelo educativo de TSU, y 60% - 40% del nivel de Licenciatura;</li>
+
+                    <li>Aulas equipadas para impartir educación en línea;</li>
+
+                    <li>Colocación de los egresados, en 6 meses o menos;</li>
+
+                    <li>Convenios firmados con el sector productivo, social y educativo que impacten en las actividades
+                      académicas
+                      y de vinculación de la Universidad.</li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    DEBILIDADES
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>
+                      <p>Nivel Alto: </p>
+                    </strong>
+
+                    <li>Insuficiente número de Profesores de Tiempo Completo contratados para atender la matrícula;</li>
+
+                    <li>Insuficiente número de Profesores de Tiempo Completo con reconocimiento del perfil deseable del
+                      PRODEP;
+                    </li>
+
+                    <li>Insuficiente número de Profesores de Tiempo Completo inscrito en el Sistema Nacional de
+                      Investigadores;
+                    </li>
+
+                    <li>Insuficiente software para mantener actualizados los Programas Educativos;</li>
+
+                    <li>Falta de recursos para la actualización de mobiliario en varios laboratorios;</li>
+
+                    <li>Falta de implementación del modelo de incubación conforme a las políticas de la DGUTyP;</li>
+
+                    <li>Insuficientes espacios adecuados para el desarrollo de actividades artísticas, culturales y
+                      deportivas;
+                    </li>
+
+                    <li>Falta de áreas de esparcimiento para la comunidad estudiantil y el personal que labora en la
+                      Institución;
+                    </li>
+
+                    <li>Carencia de espacios físicos adecuados para el trabajo de los Profesores de Tiempo Completo;
+                    </li>
+
+                    <li>Insuficiencia de accesorios y equipos para desarrollo de actividades artísticas, culturales y
+                      deportivas;
+                    </li>
+
+                    <li>Carencia de un edificio de vinculación para ofertar servicios como: certificaciones, cursos de
+                      educación
+                      continua, servicios tecnológicos y renta de espacios; </li>
+
+                    <li>Carencia de un edificio de Vinculación para atender el aumento de matrícula y ofertar los
+                      Servicios de
+                      Educación Continua, Servicios Tecnológicos, así como fortalecer la vinculación con el Sector
+                      Productivo;
+                    </li>
+
+                    <li> Presiones financieras derivadas del incremento de los gastos de operación; </li>
+
+                    <li>Presupuesto limitado en la operación y la inversión necesaria para seguir creciendo;</li>
+
+                    <li>Estructura administrativa y docente austera y con limitaciones; </li>
+
+                    <li> No contar con un proceso de evaluación al desempeño que asegure la calidad en el desempeño del
+                      personal
+                      docente y administrativo; </li>
+
+                    <li>Infraestructura limitada; </li>
+
+                    <li> El área de servicios médicos no cuenta con un espacio ni ubicación apropiado para brindar
+                      atención; y
+                    </li>
+
+                    <li>Falta de planeación en las adquisiciones y previsión de los tiempos necesarios para ello.</li>
+
+                    <strong>
+                      <p> Nivel Medio:</p>
+                    </strong>
+
+
+                    <li>Solo un Programa Educativo de licenciatura está acreditado por parte de los Comités
+                      Interinstitucionales
+                      para la Evaluación de la Educación Superior, A. C. (CIEES);</li>
+
+                    <li>Insuficientes artículos arbitrados elaborados por los Profesores de Tiempo Completo;</li>
+
+                    <li>Pocos estudiantes inscritos en programas de intercambio o movilidad en instituciones
+                      extranjeras;</li>
+
+                    <li>Insuficientes convenios firmados con Universidades extranjeras para la movilidad estudiantil;
+                    </li>
+
+                    <li>Falta de un programa de intercambio de profesores en instituciones de educación superior a nivel
+                      internacional; </li>
+
+                    <li>Falta de actualización del Reglamento Interior de Trabajo de la UTS; </li>
+
+                    <li>Poca capacitación técnica del personal administrativo;</li>
+
+                    <li>Desigualdad en modalidades de contratación y prestaciones de los trabajadores docentes y
+                      administrativos;
+                      y </li>
+
+                    <li>Falta de programa de estímulos ligado al desempeño. </li>
+
+                    <strong>
+                      <p> Nivel Bajo: </p>
+                    </strong>
+
+                    <li>Equipo de cómputo para el personal administrativo obsoleto; </li>
+                    <li>Falta de actualización de equipamiento en Laboratorios y Talleres; </li>
+                    <li>Carencia de espacios acondicionados para personas con discapacidad; y </li>
+                    <li>La UTS no participa en la Red Nacional Incluyente para atención a personas con discapacidad.
+                    </li>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    OPORTUNIDADES/Oportunidades de la UTS
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <li>La Tasa bruta de escolarización (o cobertura educativa) en Educación Superior del Estado de
+                      Guanajuato,
+                      está muy por debajo de la que se registra a nivel nacional;</li>
+
+                    <li>Existencia de Corredores Económicos en el Estado de Guanajuato con vocación industrial precisa,
+                      definidos
+                      por la Secretaria de Desarrollo Económico Sustentable, que permiten la vinculación de las IES con
+                      los
+                      sectores social y productivo;</li>
+
+                    <li>Crecimiento de la industria Automotriz en el municipio de Salamanca y alrededores;</li>
+
+                    <li>Necesidad de aprendizaje de idiomas con la llegada de empresas internacionales;</li>
+
+                    <li>La ciudad de Salamanca esta entre los corredores Industriales más importantes del Bajío, por lo
+                      que la
+                      UTS, tiene la capacidad de formar Profesionistas que coadyuven en el crecimiento de estas
+                      Industrias y
+                      en
+                      consecuencia en el desarrollo y crecimiento de la ciudad;</li>
+
+                    <li> La Tasa bruta de escolarización (o cobertura educativa) en Educación Superior del Estado de
+                      Guanajuato,
+                      está muy por debajo de la que se registra a nivel nacional;</li>
+
+                    <li>Existencia de Corredores Económicos en el Estado de Guanajuato con vocación industrial precisa,
+                      definidos
+                      por la Secretaria de Desarrollo Económico Sustentable, que permiten la vinculación de las IES con
+                      los
+                      sectores social y productivo; </li>
+
+                    <li>Crecimiento de la industria Automotriz en el municipio de Salamanca y alrededores;</li>
+
+                    <li>Necesidad de aprendizaje de idiomas con la llegada de empresas internacionales;</li>
+
+                    <li>La ciudad de Salamanca esta entre los corredores Industriales más importantes del Bajío, por lo
+                      que la
+                      UTS, tiene la capacidad de formar Profesionistas que coadyuven en el crecimiento de estas
+                      Industrias y
+                      en
+                      consecuencia en el desarrollo y crecimiento de la ciudad;</li>
+
+                    <li>Se tiene un gran número de convenios a nivel nacional y con el extranjero para realizar cambios
+                      en
+                      infraestructura, intercambios estudiantiles y aplicación de tecnología;</li>
+
+                    <li>Auge en la apertura de carreras técnicas especializadas e ingeniería, logrando una mayor
+                      vinculación
+                      con
+                      el sector empresarial y un crecimiento en el uso de TI; </li>
+
+                    <li>El Gobierno del estado de Guanajuato promueve la vinculación y relaciones públicas con empresas
+                      y a
+                      nivel
+                      nacional e internacional;</li>
+
+                    <li>Interés de las familias en que sus hijos tengan mayor acceso a la educación superior para evitar
+                      que
+                      estos
+                      emigren, así como el retorno de las personas adultas a las universidades para continuar con sus
+                      estudios
+                      a
+                      nivel posgrado; </li>
+
+                    <li>Existencia de la Comisión Estatal para la Planeación de la Educación Superior, A.C. (COEPES),
+                      que
+                      opera en
+                      apoyo a la planeación de la educación superior de Instituciones tanto públicas como privadas;</li>
+
+                    <li>El Gobierno del Estado de Guanajuato estableció la estrategia “Valle de la Mentefactura
+                      Guanajuato”; y
+                    </li>
+
+                    <li>Desarrollo de la Industria 4.0 en el Estado de Guanajuato. </li>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    AMENAZAS/Amenazas de la UTS
+                  </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <li>En México existe una baja calidad de la educación en todos los niveles educativos; </li>
+                    <li>En el Estado de Guanajuato hay bajos niveles de cobertura educativa en educación media superior
+                      y
+                      superior; </li>
+                    <li>Existe deficiencia en la formación matemática; </li>
+                    <li>Pérdida de la capacidad para leer en la sociedad; </li>
+                    <li>La educación pública está siendo rebasada por la particular ya que se ha avanzado muy poco en la
+                      consolidación de la calidad y sus indicadores siguen en lugares bajos; </li>
+                    <li>Incremento del fenómeno de migración a los Estados Unidos de América en busca de mejores
+                      oportunidades;
+                    </li>
+                    <li>Deterioro en las relaciones humanas entre los estudiantes, debido al confinamiento por la
+                      Pandemia de
+                      la
+                      COVID19; </li>
+                    <li>Deficiente conectividad de internet en localidades rurales;</li>
+                    <li>Incremento de la inseguridad. </li>
+                    <li>Entorno económico desfavorable para las familias y por tanto para los estudiantes </li>
+                    <li>Preferencias de los egresados de bachillerato por estudiar en otras Universidades Públicas y
+                      Privadas;
+                    </li>
+                    <li>Falta de nuevos programas educativos de nivel Administrativo, para que la Universidad no se vea
+                      rebasada
+                      por la educación particular; </li>
+                    <li>Recortes presupuestales y despido de personal a nivel estatal y federal; </li>
+                    <li>Cambios políticos que afectan el desarrollo académico de la Universidad; y </li>
+                    <li>Rutas insuficientes de transporte público para los estudiantes del turno vespertino. </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mb-4">
+      <div class="col-xs-12 col-md-3 mb-4 d-flex align-items-center">
+        <div class="row">
+          <div class="col">
+            <div class="d-grid gap-3">
+              <button type="button" class="btn" style="background: yellow;" data-bs-toggle="modal"
+                data-bs-target="#contextoModal" class="p-2 bg-light border">Identificacion del Contexto.</button>
+
+
+              <button type="button" class="btn" class="p-2 bg-light border" style="background: yellow;"> Necesidades y
+                Expectativas de las Partes
+                Interesadas. </button>
+
+              <button type="button" class="btn" style="background: yellow;" class="p-2 bg-light border">
+                Acciones para Riesgo y Oportunidades.
+              </button>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="rounded-1" style="background: rgba(59, 137, 238, 0.844);">
+              <ul>
+                <li>Programa Institucional.</li>
+                <li>Politicas Institucional y Legislacion Universitaria.</li>
+                <li>Planes y Programas de Estudio.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xs-12 col-md-6 mb-4 d-flex align-items-center">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item" style="background-color: rgb(241, 243, 245);">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#plan"
+                aria-expanded="true" aria-controls="plan" style="background-color: #529df8cb;">
+                1. MACROPROCESO ESTRATEGICO: Planeacion y Calidad.
+              </button>
+            </h2>
+            <!-- Este es el macroproceso-->
+            <div id="plan" class="accordion-collapse collapse" data-bs-parent="#plan" style="background: #529df8cb;">
+              <div class="accordion-body">
+                <p>Subprocesos:</p>
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#com"
+                  aria-expanded="true" aria-controls="com" style="background-color: #a7c8f0cb;" class="rounded-pill">
+                  I.1 Comunicación Institucional.
+                </button>
+                </h2>
+                <div id="com" class="accordion-collapse collapse" data-bs-parent="#com">
+                  <div class="accordion-body">
+                    <p>-</p>
+                  </div>
+                </div>
+
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#est"
+                  aria-expanded="true" aria-controls="est" style="background-color: #a7c8f0cb;">
+                  I.2 Planeación Estratégica y Operativa.
+                </button>
+                </h2>
+                <div id="est" class="accordion-collapse collapse" data-bs-parent="#est">
+                  <div class="accordion-body">
+                    <strong>
+                      <p>Procedimientos Institucionales y/o Instrucciones de Trabajo </p>
+                    </strong>
+                    <li>Evaluación del cumplimiento de Planes Institucionales.</li>
+                    <li>Informes de la Unidad de Acceso a la Información. </li>
+
+
+                    <strong>
+                      <p>Seguimiento y revisión de la información sobre las partes interesadas y los requisitos
+                        pertinentes </p>
+                    </strong>
+                    <li>Informe trimestral, cuatrimestral y anual. </li>
+                    <li>Informes de la Unidad de Acceso a la Información. </li>
+                  </div>
+                </div>
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ges"
+                  aria-expanded="true" aria-controls="ges" style="background-color: #a7c8f0cb;">
+                  I.3 Gestión de la Calidad.
+                </button>
+                </h2>
+                <div id="ges" class="accordion-collapse collapse" data-bs-parent="#ges">
+                  <div class="accordion-body">
+                    <li> I.3.1 Acciones Correctivas y Preventivas (Riesgos).</li>
+                    <li> I.3.2 Control de Servicios No Conforme.</li>
+                    <li> I.3.3 Revisión del SGC por la Rectoría.</li>
+                    <li> I.3.4 Auditoría Internas</li>
+                    <li> I.3.5 Seguimiento y Medición de los Procesos</li>
+                    <li> I.3.6 Política de Calidad </li>
+                    <li> 1.3.7 Medición, Análisis y Mejora</li>
+                  </div>
+                </div>
+                <!-- este es el corte del los macroprocesos-->
+              </div>
+
+            </div>
+
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#GAV"
+              aria-expanded="true" aria-controls="GAV" style="background-color: #e2f279;">
+              2. MACROPROCESO DE SOPORTE: Gestión Administrativa,Vinculacion y Extensión
+              Universitaria.
+
+            </button>
+            </h2>
+            <div id="GAV" class="accordion-collapse collapse" data-bs-parent="#GAV" style="background: #e2f279;;">
+              <div class="accordion-body">
+                <p>Subprocesos:</p>
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fina"
+                  aria-expanded="true" aria-controls="fina" style="background-color: #ecf7a9d1;">
+                  II.1 Gestion de Recursos Financieros.
+                </button>
+                </h2>
+                <div id="fina" class="accordion-collapse collapse" data-bs-parent="#fina">
+                  <div class="accordion-body">
+                    <p>-</p>
+                  </div>
+                </div>
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#huma"
+                  aria-expanded="true" aria-controls="huma" style="background-color: #ecf7a9d1;">
+                  II.2 Gestion de Recursos Humanos.
+                </button>
+                </h2>
+                <div id="huma" class="accordion-collapse collapse" data-bs-parent="#huma">
+                  <div class="accordion-body">
+                    <p>-</p>
+
+                  </div>
+                </div>
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#material"
+                  aria-expanded="true" aria-controls="material" style="background-color: #ecf7a9d1;">
+                  II.3 Gestion de Recursos Materiales.
+                </button>
+                </h2>
+                <div id="material" class="accordion-collapse collapse" data-bs-parent="#material">
+                  <div class="accordion-body">
+                    <p>-</p>
+                  </div>
+                </div>
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#apollo"
+                  aria-expanded="true" aria-controls="apollo" style="background-color: #ecf7a9d1;">
+                  II.4 Servicios de Apoyo al Estudiante.
+                </button>
+                </h2>
+                <div id="apollo" class="accordion-collapse collapse" data-bs-parent="#apollo">
+                  <div class="accordion-body">
+                    <strong>
+                      <p>Procedimientos Institucionales y/o Instrucciones de Trabajo </p>
+                    </strong>
+                    <li>Apoyo psicopedagógico.
+
+                      Becas.
+
+                      Servicios bibliotecarios.
+
+                      Servicio médico. </li>
+
+                    <strong>
+                      <p>Seguimiento y revisión de la información sobre las partes interesadas y los requisitos
+                        pertinentes </p>
+                    </strong>
+
+                    <li>Informe Cuatrimestral. </li>
+                  </div>
+                </div>
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#escola"
+                  aria-expanded="true" aria-controls="escola" style="background-color: #ecf7a9d1;">
+                  II.5 Servicios Escolares.
+                </button>
+                </h2>
+                <div id="escola" class="accordion-collapse collapse" data-bs-parent="#escola">
+                  <div class="accordion-body">
+                    <strong>
+                      <p>Procedimientos Institucionales y/o Instrucciones de Trabajo </p>
+                    </strong>
+                    <li> Admisión e Inscripción. </li>
+                    <li>Inscripción Titulación </li>
+                    <strong>
+                      <p>Seguimiento y revisión de la información sobre las partes interesadas y los requisitos
+                        pertinentes </p>
+                    </strong>
+                    <li>Inicio de cuatrimestres de nueva inscripción: septiembre y enero. </li>
+                    <li>Informe Cuatrimestral. </li>
+
+                  </div>
+                </div>
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tec"
+                  aria-expanded="true" aria-controls="tec" style="background-color: #ecf7a9d1;">
+                  II.6 Tecnología de la Informacion.
+                </button>
+                </h2>
+                <div id="tec" class="accordion-collapse collapse" data-bs-parent="#tec">
+                  <div class="accordion-body">
+                    <strong>
+                      <p> Procedimientos Institucionales y/o Instrucciones de Trabajo</p>
+                    </strong>
+                    <li> Servicios de tecnologías de la información. </li>
+
+                    <strong>
+                      <p>Seguimiento y revisión de la información sobre las partes interesadas y los requisitos
+                        pertinentes </p>
+                    </strong>
+
+                    <li>Informe Cuatrimestral. </li>
+
+
+                  </div>
+                </div>
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#jur"
+                  aria-expanded="true" aria-controls="jur" style="background-color: #ecf7a9d1;">
+                  II.7 Asesorias Juridicas.
+                </button>
+                </h2>
+                <div id="jur" class="accordion-collapse collapse" data-bs-parent="#jur">
+                  <div class="accordion-body">
+                    <strong>
+                      <p> Seguimiento y revisión de la información sobre las partes interesadas y los requisitos
+                        pertinentes
+                      </p>
+                    </strong>
+                    <li>Informes cuatrimestrales </li>
+                  </div>
+                </div>
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#extu"
+                  aria-expanded="true" aria-controls="extu" style="background-color: #ecf7a9d1;">
+                  II.8 Vinculación y Extensión Universitaria.
+                </button>
+                </h2>
+                <div id="extu" class="accordion-collapse collapse" data-bs-parent="#extu">
+                  <div class="accordion-body">
+                    <strong>
+                      <p>Procedimientos Institucionales y/o Instrucciones de Trabajo </p>
+                    </strong>
+
+                    <li>Prensa y Difusión. </li>
+
+                    <strong>
+                      <p> Educación continua y servicios tecnológicos: </p>
+                    </strong>
+
+                    <li>Cursos de educación continua y servicios tecnológicos. </li>
+                    <li>Centro de Lenguas. </li>
+                    <li>Certificación de competencias laborales.</li>
+
+                    <li>Actividades culturales y deportivas.</li>
+
+                    <li>Incubación de negocios.</li>
+
+                    <li>Movilidad nacional e internacional.</li>
+
+                    <strong>
+                      <p>Educación continua y servicios Tecnológicos: </p>
+                    </strong>
+                    <li>Cursos de educación continua y servicios tecnológicos. </li>
+                    <li>Centro de Lenguas. </li>
+                    <li>Certificación de competencias laborales. </li>
+
+                    <li>Seguimiento de egresados. </li>
+
+                    <strong>
+                      <p>Educación continua y servicios tecnológicos: </p>
+                    </strong>
+                    <li>Cursos de educación continua y servicios tecnológicos. </li>
+                    <li>Centro de Lenguas. </li>
+                    <li>Certificación de competencias laborales. </li>
+                    <li>Consejo de Vinculación </li>
+
+                    <li>AST</li>
+
+
+                    <strong>
+                      <p>Seguimiento y revisión de la información sobre las partes interesadas y los requisitos
+                        pertinentes </p>
+                    </strong>
+
+                    <li>Informe Cuatrimestral. </li>
+
+                    <li>AST</li>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#educativo"
+              aria-expanded="true" aria-controls="educativo" style="background-color: #3ef647d8;">
+              3. MACROPROCESO CLAVE: Educativo.
+            </button>
+            </h2>
+            <div id="educativo" class="accordion-collapse collapse" data-bs-parent="#educativo"
+              style="background: #3ef647d8;">
+              <div class="accordion-body">
+                <p>Subprocesos:</p>
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ap"
+                  aria-expanded="true" aria-controls="ap" style="background-color: #90f395d5;">
+                  III.1 Enseñanza - Aprendizaje.
+                </button>
+                </h2>
+                <div id="ap" class="accordion-collapse collapse" data-bs-parent="#ap">
+                  <div class="accordion-body">
+                    <strong>
+                      <p> Procedimientos Institucionales y/o Instrucciones de Trabajo </p>
+                    </strong>
+                    <li>Asesorías académicas.
+
+                      Evaluación del aprendizaje.
+
+                      Gestión de la Asignatura.
+
+                      Servicios de laboratorios y talleres.
+
+                      Tutorías.
+
+                      Visitas académicas a empresas. </li>
+
+                    <strong>
+                      <p>Seguimiento y revisión de la información sobre las partes interesadas y los requisitos
+                        pertinentes </p>
+                    </strong>
+
+                    <li> Informe Cuatrimestral. </li>
+
+
+                  </div>
+                </div>
+
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#labo"
+                  aria-expanded="true" aria-controls="labo" style="background-color: #90f395d5;">
+                  III.2 Uso de Laboratorios y Talleres.
+                </button>
+                </h2>
+                <div id="labo" class="accordion-collapse collapse" data-bs-parent="#labo">
+                  <div class="accordion-body">
+                    <p>-</p>
+
+
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="col-xs-12 col-md-3 d-flex align-items-center">
+        <div style="background: rgba(101, 152, 248, 0.768);" class="rounded-1">
+          <ul>
+            <li> Cumplimiento del Encargo Social.</li>
+            <li>Cumplimiento de las Necesidades y Expectivas de los Usuarios y Partes Interesadas.</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
+
+      </link>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="mapa_procesos.js"></script>
+
+</html>
